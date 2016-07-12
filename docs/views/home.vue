@@ -29,9 +29,3 @@
     margin: 0 auto;  
   }
 </style>
-
-reach  jsx  reach naxt
-
-vue weex 
-
-backbon+router+jquery + panggo cd  webview

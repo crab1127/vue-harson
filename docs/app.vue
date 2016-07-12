@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="container">
-      <a class="logo" href="/">前端架构</a>
+      <a class="logo" v-link="{path:'/'}">前端架构</a>
       <ul class="nav navbar-nav">
         <li v-for="nav in navs">
           <a v-link="{'name': nav.name}">{{nav.cnName}}</a>

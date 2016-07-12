@@ -28,4 +28,8 @@ export default function(router) {
     }
   }))
   router.map(routesMap)
+  router.redirect({
+    '/components': '/component/modal',
+    '/about': '/'
+  })
 }

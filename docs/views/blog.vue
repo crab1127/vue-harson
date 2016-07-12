@@ -1,5 +1,7 @@
 <template>
-  {{{ content | marked }}}
+  <div class="markdown-body home-content">
+    {{{ content | marked }}}
+  </div>
 </template>
 <script type="text/javascript">
   //import content from './about.md'
@@ -12,7 +14,8 @@
     },
     route: {
       data(transition) {
-        this.$http.get('/docs/views/'+transition.to.name+'.md').then((response) => {
+        console.log(transition.to.name)
+        this.$http.get('/docs/article/'+transition.to.name+'.md').then((response) => {
           this.content = response.data
         })
         //this.content = require('./'+transition.to.name+'.md')
@@ -24,3 +27,9 @@
     }
   }
 </script>
+<style type="text/css">
+  .home-content{
+    width:800px;
+    margin: 20px auto;  
+  }
+</style>
