@@ -19,7 +19,6 @@
 
 <script>
 
-import Icon from './icon.vue'
 
 export default {
     props: {

@@ -9,7 +9,6 @@
 </template>
 
 <script>
-import Icon from './Icon.vue'
 
 /**
  * 组件内部自动关闭

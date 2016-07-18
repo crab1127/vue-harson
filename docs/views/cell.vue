@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="sidebar">
     <menu></menu>
   </div>
@@ -277,6 +278,7 @@
         <Tooltips :text.sync="tooltipsWarn" :type="'warn'"></Tooltips>
     </div>
   </div>
+</div>  
 </template>
 <script>
 import WeSelect from './../../src/components/select.vue'

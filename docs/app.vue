@@ -1,4 +1,5 @@
 <template>
+<div>
   <header id="header">
     <div class="container">
       <a class="logo" v-link="{path:'/'}">前端架构</a>
@@ -12,10 +13,12 @@
   <div id="main">
     <router-view></router-view> 
   </div>
+</div>
 </template>
 
 <script>
   import { nav } from './navConfig'
+  
   export default {
     data() {
       return {
@@ -27,6 +30,7 @@
 
 <style lang="less">
   @import "../src/style/base/reset";
+  @import "../src/style/icon/weui_icon_font";
   @import "../src/style/widget/weui_button/weui_button";
   @import "./assets/markdown.css";
 
@@ -105,12 +109,14 @@
     margin: 0;
     line-height: 1.8em;
   }
-  .sidebar .menu-sub {
-      //font-size: 0.85em;
+  .sidebar .sub-menu {
+      font-size: 0.85em;
+      margin-left: 1em;
   }
   .menu-root strong{
-    font-size: 0.85em;
-    color:#999
+    //font-size: 0.85em;
+    color:#999; 
+    font-weight: 400;
   }
   .menu-root a{
     color:#666

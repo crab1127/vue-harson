@@ -1,10 +1,12 @@
 <template>
+<div>
   <div class="sidebar">
     <menu></menu>
   </div>
   <div class="content">
     <my-video :sources="video.sources" :options="video.options"> </my-video>
   </div>
+</div>
 </template>
 
 <script type="text/javascript">

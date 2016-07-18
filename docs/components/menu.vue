@@ -4,7 +4,8 @@
       <strong> {{ menu.title }}</strong>
       <ul class="sub-menu">
         <li v-for="page in menu.list">
-          <a v-link="{'name': page.name}">{{page.name}}</a>
+          <a v-if="page.state === '0'" class="disable">{{page.name}}</a>
+          <a v-else v-link="{'name': page.name}">{{page.name}}</a>
         </li>
       </ul>
     </li>
@@ -25,3 +26,8 @@
     }
   }
 </script>
+<style lang="less">
+  .disable{
+    color:#999 !important;
+  }
+</style>

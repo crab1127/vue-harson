@@ -3,11 +3,9 @@ import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 
 import configRouter from './routes'
+import * as hsComponents from './components'
 
 import App from './app.vue'
-
-//require('./assets/docs.css')
-
 
 
 Vue.use(VueRouter)
@@ -22,8 +20,9 @@ let router = new VueRouter({
 configRouter(router)
 
 //组件
-import menu from './components/menu.vue'
-Vue.component('menu', menu)
+Object.keys(hsComponents).forEach((component) => {
+  Vue.component(component, hsComponents[component])
+})
 
 
 router.start(App, '#app')

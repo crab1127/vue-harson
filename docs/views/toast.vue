@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="sidebar">
     <menu></menu>
   </div>
@@ -21,6 +22,7 @@
 
     </div>
   </div>  
+</div>
 </template>
 
 <script>

@@ -1,15 +1,17 @@
 <template>
+<div>
   <div class="sidebar">
     <menu></menu>
   </div>
   <div class="content">
-    <h1>{{ title }}</h1>
+    <h1>{{ title }} ddd</h1>
     <slide id="swiper_horizontal"
           :pagination-visible="true"
           direction="horizontal">
       <div v-for="slideText in slides" track-by="$index">{{slideText}}</div>
     </slide>
   </div>
+</div>
 </template>
 <script type="text/javascript">
   import slide from '../../src/components/slide.vue'
@@ -18,7 +20,7 @@
     data() {
       return {
         title: '幻灯片',
-        slides: ['← o →', 'Page 2', 'Page 3']
+        slides: ['← o ssss→', 'Page 2', 'Page 3']
       }
     },
     components: {

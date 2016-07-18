@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="sidebar">
     <menu></menu>
   </div>
@@ -6,6 +7,7 @@
     <h1>{{title}}</h1>
     <paging :total.sync="page.total" :current="page.current" :per-page="page.perPage" :page-changed="pageCallback"></paging>
   </div>
+</div>
 </template>
 
 <script>

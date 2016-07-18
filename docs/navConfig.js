@@ -37,12 +37,33 @@ const components = [
       },
       {
         name: 'video'
+      },
+      {
+        name: 'lazyLoad',
+        state: '0'
+      },
+      {
+        name: 'loadmore'
+      },
+      {
+        name: 'tab'
+      },
+      {
+        name: 'table'
       }
     ]
   },
   {
     title: 'css components',
     list: [
+      {
+        name: 'header',
+        state: '0'
+      },
+      {
+        name: 'table',
+        state: '0'
+      },
       {
         name: 'button',
         cnName: '按钮'
@@ -58,7 +79,12 @@ const components = [
   {
     title: 'form components',
     list: [
-
+      {
+        name: 'switch'
+      },
+      {
+        name: 'checklist'
+      }
     ]
   }
 ]

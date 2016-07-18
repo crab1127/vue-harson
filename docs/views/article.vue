@@ -1,4 +1,5 @@
 <template>
+  <div>
   <div class="sidebar">
     <menu></menu>
   </div>
@@ -30,6 +31,7 @@
             </article>
         </div>
     </div>
+  </div>
   </div>
 </template>
 
